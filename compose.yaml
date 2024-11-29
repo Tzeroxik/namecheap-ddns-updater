@@ -1,0 +1,9 @@
+services:
+  namecheap-ddns-updater:
+    network_mode: host
+    restart: always
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        config: ${CONFIG_PATH}

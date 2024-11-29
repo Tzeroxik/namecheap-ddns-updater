@@ -1,0 +1,23 @@
+[package]
+name = "namecheap-ddns-updater"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+dns-lookup = "2.0.4"
+config = { version = "0.14.1", default-features = false, features = ["async", "yaml"] }
+serde = { version = "1.0.215", default-features = false, features = ["default", "alloc", "derive"] }
+chrono = "0.4.38"
+
+[[bin]]
+edition = "2021"
+name = "namecheap-ddns-updater"
+test = false
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3

@@ -1,6 +1,8 @@
 # no accidental configuration pushes
 config.yaml
 
+.idea
+
 # Created by https://www.toptal.com/developers/gitignore/api/rust,rust-analyzer,intellij+all
 # Edit at https://www.toptal.com/developers/gitignore?templates=rust,rust-analyzer,intellij+all
 

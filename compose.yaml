@@ -5,5 +5,3 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-      args:
-        config: ${CONFIG_PATH}

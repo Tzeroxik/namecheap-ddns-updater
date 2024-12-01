@@ -1,5 +1,5 @@
 # no accidental configuration pushes
-config.yaml
+data/config.yaml
 
 .idea
 
